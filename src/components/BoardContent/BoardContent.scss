@@ -1,0 +1,18 @@
+@import '_setting.scss';
+
+
+.board-content{
+    display: flex;
+    overflow-x: auto;  /// cuộn theo thanh nang
+    margin: 0 $gap $gap; 
+    &::-webkit-scrollbar{ // xoa bo thanh cuộn ban đàu
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:horizontal{ // Chỉnh thêm độ rộng thanh cuộn ngang mới 
+      height: 11px;
+    }
+    &::-webkit-scrollbar-thumb{ //  chỉnh màu sác thanh cuộn
+      background-color: $common-element-bg ;
+      border-radius: 8px;
+    }
+}
